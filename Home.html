@@ -1,0 +1,329 @@
+<html lang="en">
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+ text-align: center;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: #DAF7A6;
+}
+
+/* Header/Logo Title */
+.header1 {
+  padding: 5px;
+  text-align: right;
+  background: black;
+  color: white;
+  font-size: 15px; 
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1{
+background-color: #4CAF50;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
+.col {
+padding: 20px;
+text-align: center;
+font-size: 20px;
+
+}
+
+.but {
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+ 
+      .logo{
+      	display:flex;
+      	justify-content: center;
+      	align-items: center;
+      }
+      .logo img{
+      	width: 180px;
+      	border-radius: 50px;
+
+      }
+
+      .nav-flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	width: 100%;
+	padding: 0;
+}
+
+.nav-flex-row li {
+	text-decoration: none;
+	list-style-type: none;
+	padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+	font-family: 'Big Shoulders Text', cursive;
+	color: #000;
+	background: #ffffff;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.nav-flex-row li a:hover{
+	background: #E7E7E7;
+}
+
+
+      
+</style>
+</head>
+<body>
+
+<div class="header1">
+<button class="button button1"><a href = "login.html">LOGIN</a></button>
+</div>
+
+
+<aside><div class="header" width="80%" height="20px">
+	<div class="logo">
+		<img src="https://cdn-icons-png.flaticon.com/512/306/306422.png">
+    <h1> SORTING VISUALIZER</h1>
+    <marquee><h3>A sorting algorithm will put items in a list into an order, such as alphabetical or numerical order</h3></marquee>
+
+
+  
+</div></aside>
+<nav>
+  <strong>
+      <ul class="nav-flex-row">
+        <li class="nav-item">
+          <a href="#insertion">Insertion </a>
+        </li>
+        <li class="nav-item">
+          <a href="#bubble">Bubble</a>
+        </li>
+        <li class="nav-item">
+          <a href="#selection">Selection</a>
+        </li>
+        <li class="nav-item">
+          <a href="#quick">Quick</a>
+        </li>
+      </ul>
+  </strong>
+    </nav>
+<div class="content">
+  
+
+  <br>
+  <br>
+<br>
+<hr style="height:3px;border-width:0;color:gray;background-color:red">
+<div id="insertion" class="w3-padding-top-64">
+	<section class="about-section">
+		<article>
+<center><h6><p style="font-size:40px"> INSERTION SORT </p> </center></article></section></h6>
+<div class="row">
+  <div class="column">
+    
+<div class="col">
+	<background-color : blue>
+    
+<p><h4>Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands.
+ The array is virtually split into a sorted and an unsorted part.
+ Values from the unsorted part are picked and placed at the correct position in the sorted part
+Insertion sort iterates, consuming one input element each repetition, and grows a sorted output list.
+ At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there.
+ It repeats until no input elements remain.
+</h4 ></p>
+  </div>
+  </div>
+
+  <div class="column">
+    <img src="./images/Insertion-sort-1.png" alt="insertion" width="300" height="300">
+
+</div>
+  <div class="column">
+    <img src="./images/Insertion_sort.gif" alt="South indian meal" width="300" height="300">
+
+
+  </div>
+</div>
+
+<br>
+<hr style="height:3px;border-width:0;color:gray;background-color:red">
+<div id="bubble" class="w3-padding-top-64">
+	<section class="about-section">
+		<article>
+<center> <h6><p style="font-size:40px"> BUBBLE SORT </p> </center></h6>
+<div class="row">
+  <div class="column">
+    <p><h3>Bubble sort, sometimes referred to as sinking sort, 
+is a simple sorting algorithm that repeatedly steps through the 
+list, compares adjacent elements and swaps them if they are in the wrong order. 
+The pass through the list is repeated until the list is sorted.
+<br>Although it is simple to use, it is primarily used as an educational tool because the performance of bubble sort is poor in the real world. It is not suitable for large data sets. The average and worst-case complexity of Bubble sort is O(n2), where n is a number of items.
+
+Bubble short is majorly used where -
+
+complexity does not matter
+simple and shortcode is preferred</h3></p>
+    
+<div class="col">
+    
+
+  </div>
+  </div>
+
+  <div class="column">
+    <img src="./images/bubble.jpg" alt="bubble sort" width="300" height="300">
+<div class="col">
+
+  </div>
+</div>
+  <div class="column">
+    <img src="./images/bubble.gif" alt="bubble" width="300" height="300">
+
+
+  </div>
+</div>
+<br>
+<hr style="height:3px;border-width:0;color:gray;background-color:red">
+<div id="selection" class="w3-padding-top-64">
+	<section class="about-section">
+		<article>
+<center> <h6><p style="font-size:40px"> SELECTION SORT </p> </center></h6>
+<div class="row">
+  <div class="column">
+    <p><h3>
+
+The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.<br>
+1) The subarray which is already sorted.<br>  2) Remaining subarray which is unsorted.In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.</h3></p>
+<div class="col">
+    
+
+  </div>
+  </div>
+
+  <div class="column">
+    <img src="./images/selection.png" alt="selection" width="300" height="300">
+<div class="col">
+
+  </div>
+</div>
+  <div class="column">
+    <img src="./images/selection.gif" alt="selection" width="300" height="300">
+<div class="col">
+
+  </div>
+
+  </div>
+</div>
+<br>
+<hr style="height:3px;border-width:0;color:gray;background-color:red">
+<div id="quick" class="w3-padding-top-64">
+	<section class="about-section">
+		<article>
+<center> <h6><p style="font-size:40px"> QUICK SORT </p> </center></h6>
+<div class="row">
+  <div class="column">
+    <p><h3>
+
+Quick sort is a highly efficient sorting algorithm and is based on partitioning of array of data into smaller arrays. A large array is partitioned into two arrays one of which holds values smaller than the specified value, say pivot, based on which the partition is made and another array holds values greater than the pivot value. Quicksort partitions an array and then calls itself recursively twice to sort the two resulting subarrays. This algorithm is quite efficient for large-sized data sets as its average and worst-case complexity are O(n2), respectively.
+Inbox</h3></p>
+<div class="col">
+    
+
+  </div>
+  </div>
+
+  <div class="column">
+    <img src="./images/quick.png" alt="selection" width="300" height="300">
+<div class="col">
+
+  </div>
+</div>
+  <div class="column">
+    <img src="./images/quick.gif" alt="selection" width="300" height="300">
+<div class="col">
+
+  </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+
+
